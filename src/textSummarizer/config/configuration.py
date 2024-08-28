@@ -88,7 +88,7 @@ class ConfigurationManager:
 
         model_evaluation_config = ModelEvaluationConfig(
             root_dir=config.root_dir,
-            data_point=config.data_point,
+            data_path=config.data_path,
             model_path=config.model_path,
             tokenizer_path=config.tokenizer_path,
             metric_file_name=config.metric_file_name
