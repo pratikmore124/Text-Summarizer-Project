@@ -19,8 +19,8 @@ async def index():
 @app.get("/train")
 async def training():
     try:
-        os.system("python main.py")
-        return Response("Training Successful!") 
+        execution_response = os.system("python main.py")
+        return Response(f"{execution_response} - Training Successful!") 
     
     except Exception as e:
         return Response(f"Error Occur:{e}")
